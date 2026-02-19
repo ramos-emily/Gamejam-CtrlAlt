@@ -2,20 +2,18 @@ extends Node
 
 var lives := 3
 var is_game_over := false
+signal lives_changed
+
+func lose_life():
+	lives -= 1
+	emit_signal("lives_changed")
+	if lives <= 0:
+		game_over()
+
 
 func reset():
 	lives = 3
 	is_game_over = false
-
-func lose_life():
-	if is_game_over:
-		return
-	
-	lives -= 1
-	print("Vida:", lives)
-	
-	if lives <= 0:
-		game_over()
 
 func game_over():
 	if is_game_over:

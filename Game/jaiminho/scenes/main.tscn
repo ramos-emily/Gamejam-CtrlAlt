@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://7tgnlxkgtwdo" path="res://scenes/food.tscn" id="3_tefeu"]
 [ext_resource type="PackedScene" uid="uid://b5hlwn2mnolaa" path="res://scenes/junk.tscn" id="4_o6xl0"]
 [ext_resource type="Script" uid="uid://22mjgt4kqa86" path="res://scripts/game_manager.gd" id="7_o6xl0"]
+[ext_resource type="Script" uid="uid://dc4ehe5o5mw17" path="res://scripts/hearts.gd" id="8_tipki"]
+[ext_resource type="Texture2D" uid="uid://b06ejnxd2fvxv" path="res://assets/Items/heart_full.png" id="9_85g3d"]
+[ext_resource type="Texture2D" uid="uid://bjrb7rmkga6mb" path="res://assets/Items/heart_empty.png" id="10_choun"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jyhfs"]
 size = Vector2(318, 38)
@@ -36,3 +39,18 @@ script = ExtResource("7_o6xl0")
 script = ExtResource("2_0wfyh")
 food_scene = ExtResource("3_tefeu")
 junk_scene = ExtResource("4_o6xl0")
+
+[node name="Hearts" type="Node2D" parent="." unique_id=1560065306]
+position = Vector2(286, 34)
+script = ExtResource("8_tipki")
+full_heart = ExtResource("9_85g3d")
+empty_heart = ExtResource("10_choun")
+
+[node name="Hearts1" type="Sprite2D" parent="Hearts" unique_id=1532489098]
+position = Vector2(-13, 1)
+
+[node name="Hearts2" type="Sprite2D" parent="Hearts" unique_id=1803554082]
+position = Vector2(1, 1)
+
+[node name="Hearts3" type="Sprite2D" parent="Hearts" unique_id=1575299623]
+position = Vector2(15, 1)

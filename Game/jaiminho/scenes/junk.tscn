@@ -1,11 +1,20 @@
 [gd_scene format=3 uid="uid://b5hlwn2mnolaa"]
 
 [ext_resource type="Script" uid="uid://ddkm7m023hp3m" path="res://scripts/object.gd" id="1_5gtx8"]
+[ext_resource type="Texture2D" uid="uid://dbhf6g6qqlcu" path="res://assets/NoFoods/Hammer.png" id="2_mg36t"]
+[ext_resource type="Texture2D" uid="uid://bx2sej1i6t44f" path="res://assets/NoFoods/Oil.png" id="3_pc67k"]
+[ext_resource type="Texture2D" uid="uid://b42kuf248kty1" path="res://assets/NoFoods/Page.png" id="4_t2wli"]
+[ext_resource type="Texture2D" uid="uid://bw8o33a4q1wjq" path="res://assets/NoFoods/poison.png" id="5_ou1wj"]
+[ext_resource type="Texture2D" uid="uid://mh2abgix3ucx" path="res://assets/NoFoods/sticht knife.png" id="6_8wgcv"]
+[ext_resource type="Texture2D" uid="uid://dpcyaevr1psbv" path="res://assets/NoFoods/stick.png" id="7_o73m1"]
+[ext_resource type="Texture2D" uid="uid://cr05jgb5pnwx4" path="res://assets/NoFoods/WakieTalie.png" id="8_645v7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_76pyj"]
 
 [node name="Area2D" type="Area2D" unique_id=1362160982]
 script = ExtResource("1_5gtx8")
+is_food = false
+possible_textures = Array[Texture2D]([ExtResource("2_mg36t"), ExtResource("3_pc67k"), ExtResource("4_t2wli"), ExtResource("5_ou1wj"), ExtResource("6_8wgcv"), ExtResource("7_o73m1"), ExtResource("8_645v7")])
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1648513151]
 

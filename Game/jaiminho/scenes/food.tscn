@@ -1,11 +1,25 @@
 [gd_scene format=3 uid="uid://7tgnlxkgtwdo"]
 
 [ext_resource type="Script" uid="uid://ddkm7m023hp3m" path="res://scripts/object.gd" id="1_xven1"]
+[ext_resource type="Texture2D" uid="uid://bc3nfex4mtou5" path="res://assets/Foods/Cake_red_velvet.png" id="2_5ihmu"]
+[ext_resource type="Texture2D" uid="uid://jekxr4yyanr7" path="res://assets/Foods/French_fries.png" id="3_4eeh2"]
+[ext_resource type="Texture2D" uid="uid://culstkuyi4oin" path="res://assets/Foods/Fruit_apple.png" id="4_nkipw"]
+[ext_resource type="Texture2D" uid="uid://dxsucufgsjmb0" path="res://assets/Foods/Fruit_banana.png" id="5_kj7a6"]
+[ext_resource type="Texture2D" uid="uid://cx2ruqwycvkyy" path="res://assets/Foods/Fruit_cherry.png" id="6_ajsbp"]
+[ext_resource type="Texture2D" uid="uid://sexjma3n7idc" path="res://assets/Foods/Fruit_grapes.png" id="7_aaq3g"]
+[ext_resource type="Texture2D" uid="uid://c5vpn5nw7ti4m" path="res://assets/Foods/Fruit_kiwi.png" id="8_vq75x"]
+[ext_resource type="Texture2D" uid="uid://41ya3at5obku" path="res://assets/Foods/Fruit_orange.png" id="9_rmvwc"]
+[ext_resource type="Texture2D" uid="uid://b8q8vo7lylst5" path="res://assets/Foods/Fruit_pear.png" id="10_mn2sa"]
+[ext_resource type="Texture2D" uid="uid://dvviv4sicfnhd" path="res://assets/Foods/Fruit_raspberry.png" id="11_ouqh8"]
+[ext_resource type="Texture2D" uid="uid://yya3nj48q8ff" path="res://assets/Foods/Fruit_strawberry.png" id="12_dn1f5"]
+[ext_resource type="Texture2D" uid="uid://dp8sshiky3yqb" path="res://assets/Foods/Hotdog.png" id="13_ck38p"]
+[ext_resource type="Texture2D" uid="uid://d11huae6piud0" path="res://assets/Foods/Pizza.png" id="14_4adc0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2glmo"]
 
 [node name="Area2D" type="Area2D" unique_id=785923629]
 script = ExtResource("1_xven1")
+possible_textures = Array[Texture2D]([ExtResource("2_5ihmu"), ExtResource("3_4eeh2"), ExtResource("4_nkipw"), ExtResource("5_kj7a6"), ExtResource("6_ajsbp"), ExtResource("7_aaq3g"), ExtResource("8_vq75x"), ExtResource("9_rmvwc"), ExtResource("10_mn2sa"), ExtResource("11_ouqh8"), ExtResource("12_dn1f5"), ExtResource("13_ck38p"), ExtResource("14_4adc0")])
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=338425230]
 

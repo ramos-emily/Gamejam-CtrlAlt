@@ -1,10 +1,8 @@
 extends Area2D
 
-@export var speed := 50.0
+@export var speed := 100.0
 @export var is_food := true
-
 @export var possible_textures: Array[Texture2D]
-
 @onready var sprite := $Sprite2D
 
 func _ready():

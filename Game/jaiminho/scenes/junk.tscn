@@ -19,7 +19,6 @@ possible_textures = Array[Texture2D]([ExtResource("2_mg36t"), ExtResource("3_pc6
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1648513151]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=81691163]
-position = Vector2(142, 143)
 shape = SubResource("RectangleShape2D_76pyj")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

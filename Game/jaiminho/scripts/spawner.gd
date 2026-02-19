@@ -3,7 +3,7 @@ extends Node2D
 @export var food_scene: PackedScene
 @export var junk_scene: PackedScene
 
-@export var spawn_delay := 1.0
+@export var spawn_delay := 1.5
 
 const GAME_WIDTH := 320
 
@@ -22,7 +22,7 @@ func spawn_object():
 	
 	obj.position = Vector2(
 		randf_range(0, GAME_WIDTH),
-		-16
+		-10
 	)
 	
 	add_child(obj)

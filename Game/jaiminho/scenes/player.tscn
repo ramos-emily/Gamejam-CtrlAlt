@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://d1jx5fdj4usb" path="res://assets/Person/Person.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://b66n8g44cwsha" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="AudioStream" uid="uid://c0neu4rlgkqu4" path="res://audios/eat.mp3" id="3_dqkch"]
+[ext_resource type="AudioStream" uid="uid://d1mwulwxjo4pu" path="res://audios/dead.mp3" id="4_qlg0r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(22, 19)
@@ -17,3 +19,9 @@ texture = ExtResource("1_3vyb7")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1756594809]
 position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_g2els")
+
+[node name="Eat" type="AudioStreamPlayer2D" parent="." unique_id=1315226548]
+stream = ExtResource("3_dqkch")
+
+[node name="Death" type="AudioStreamPlayer2D" parent="." unique_id=905658574]
+stream = ExtResource("4_qlg0r")

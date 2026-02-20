@@ -1,9 +1,13 @@
 extends CharacterBody2D
 
+signal died
+
 @export var speed := 200.0
 const GAME_WIDTH := 320
 
 @onready var sprite := $Sprite2D
+@onready var eat_sfx = $Eat
+@onready var death_sfx = $Death
 
 var sprite_idle = preload("res://assets/Person/Person.png")
 var sprite_move = preload("res://assets/Person/Person-ba.png")
@@ -14,6 +18,8 @@ var is_dead := false
 var eat_timer := 0.0
 var eat_duration := 0.3
 
+
+	
 func _physics_process(delta):
 	if is_dead:
 		return
@@ -23,6 +29,10 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_left"):
 		dir -= 1
 	if Input.is_action_pressed("ui_right"):
+		dir += 1
+	if Input.is_action_pressed("A"):
+		dir -= 1
+	if Input.is_action_pressed("D"):
 		dir += 1
 	
 	global_position.x += dir * speed * delta
@@ -47,12 +57,23 @@ func update_sprite(dir, delta):
 	else:
 		sprite.texture = sprite_idle
 
-func play_eat_animation():
-	eat_timer = eat_duration
-
 func play_dead():
+	if is_dead:
+		return
+
 	is_dead = true
 	sprite.texture = sprite_dead
+
+	if death_sfx:
+		death_sfx.play()
+
+	emit_signal("died")
+	
+func play_eat_animation():
+	eat_timer = eat_duration
+	# tocar som
+	if eat_sfx:
+		eat_sfx.play()
 
 func wrap_screen():
 	if global_position.x < 0:

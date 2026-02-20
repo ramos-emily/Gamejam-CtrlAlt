@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://b06ejnxd2fvxv" path="res://assets/Items/heart_full.png" id="9_85g3d"]
 [ext_resource type="Texture2D" uid="uid://bjrb7rmkga6mb" path="res://assets/Items/heart_empty.png" id="10_choun"]
 [ext_resource type="PackedScene" uid="uid://n5cwy3xxgn6x" path="res://scenes/MenuNarrativo.tscn" id="11_ya4ey"]
+[ext_resource type="AudioStream" uid="uid://euw7p3d3mdih" path="res://audios/game.mp3" id="12_eb6dy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jyhfs"]
 size = Vector2(318, 38)
@@ -67,3 +68,7 @@ text = "01:00"
 
 [node name="MenuNarrativo" parent="." unique_id=1991648020 instance=ExtResource("11_ya4ey")]
 visible = false
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=284374368]
+stream = ExtResource("12_eb6dy")
+volume_db = -0.775

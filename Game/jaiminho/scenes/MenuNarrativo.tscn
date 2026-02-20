@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cvawh5wfr0df3" path="res://assets/Items/envelope.png" id="2_ox7h7"]
 [ext_resource type="Texture2D" uid="uid://bges83bkji1s8" path="res://assets/Items/selo.png" id="3_h7w0r"]
 [ext_resource type="Texture2D" uid="uid://d2a2tiuyp6jrg" path="res://assets/Items/envelopeC.png" id="4_dblgu"]
+[ext_resource type="AudioStream" uid="uid://k24ug2emich4" path="res://audios/wait.mp3" id="6_4iew7"]
 
 [node name="MenuNarrativo" type="Control" unique_id=1991648020]
 layout_mode = 3
@@ -225,6 +226,9 @@ Mas nem tudo, me convém.
 6:12\""
 fit_content = true
 scroll_active = false
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1581821246]
+stream = ExtResource("6_4iew7")
 
 [connection signal="pressed" from="CardHistory/BtnNext" to="." method="_on_btn_next_pressed"]
 [connection signal="pressed" from="CardController/BtnPrev" to="." method="_on_btn_prev_pressed"]

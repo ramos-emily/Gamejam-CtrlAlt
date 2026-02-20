@@ -6,7 +6,7 @@ signal game_overed
 signal win
 
 var lives := 3
-var time_left := 10.0
+var time_left := 60.0
 var playing := false
 var skip_intro := false
 
@@ -16,7 +16,7 @@ func start_game():
 
 func reset():
 	lives = 3
-	time_left = 10.0
+	time_left = 60.0
 	emit_signal("lives_changed")
 	emit_signal("time_changed")
 
@@ -35,6 +35,9 @@ func game_over():
 		return
 
 	playing = false
+	
+	await get_tree().create_timer(0.5).timeout
+	
 	emit_signal("game_overed")
 
 func win_game():

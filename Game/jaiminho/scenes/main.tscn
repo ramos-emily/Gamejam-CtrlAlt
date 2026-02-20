@@ -66,3 +66,4 @@ theme_override_font_sizes/font_size = 12
 text = "01:00"
 
 [node name="MenuNarrativo" parent="." unique_id=1991648020 instance=ExtResource("11_ya4ey")]
+visible = false

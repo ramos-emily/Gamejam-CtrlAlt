@@ -48,6 +48,7 @@ offset_left = 160.0
 offset_top = 103.0
 offset_right = 206.0
 offset_bottom = 131.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("3_h7w0r")
 
 [node name="Label" type="Label" parent="CardHistory/BtnNext" unique_id=1229050421]
@@ -113,6 +114,7 @@ offset_left = 10.0
 offset_top = 103.0
 offset_right = 55.0
 offset_bottom = 130.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("3_h7w0r")
 
 [node name="Label" type="Label" parent="CardController/BtnPrev" unique_id=448419397]
@@ -135,6 +137,7 @@ offset_left = 86.0
 offset_top = 140.0
 offset_right = 131.0
 offset_bottom = 167.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("3_h7w0r")
 
 [node name="Label" type="Label" parent="CardController/BtnPlay" unique_id=209954787]
@@ -165,6 +168,7 @@ offset_left = 160.0
 offset_top = 103.0
 offset_right = 231.0
 offset_bottom = 136.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("3_h7w0r")
 
 [node name="Label" type="Label" parent="CardEnd/BtnReplay" unique_id=44944289]
@@ -187,6 +191,7 @@ offset_left = 10.0
 offset_top = 103.0
 offset_right = 55.0
 offset_bottom = 130.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("3_h7w0r")
 
 [node name="Label" type="Label" parent="CardEnd/BtnMenu" unique_id=566678551]
@@ -215,9 +220,9 @@ bbcode_enabled = true
 text = "Obrigado por jogar!!
 e lembre-se:
 
-Tudo me é permitido.
+\"Tudo me é permitido.
 Mas nem tudo, me convém.
-6:12"
+6:12\""
 fit_content = true
 scroll_active = false
 

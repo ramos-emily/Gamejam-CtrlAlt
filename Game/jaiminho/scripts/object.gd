@@ -20,6 +20,8 @@ func _process(delta):
 func _on_body_entered(body):
 	if body.is_in_group("player"):
 		if is_food:
+			body.play_eat_animation()
 			queue_free()
 		else:
+			body.play_dead()      
 			GameManager.game_over()

@@ -3,7 +3,7 @@ extends Node2D
 @export var food_scene: PackedScene
 @export var junk_scene: PackedScene
 
-@export var spawn_delay := 1.5
+@export var spawn_delay := 1.0
 
 const GAME_WIDTH := 320
 

@@ -4,7 +4,11 @@ var lives := 3
 var time_left := 60.0
 
 func _process(delta):
+	if not GameManager.playing:
+		return
+
 	GameManager.time_left -= delta
+
 	if GameManager.time_left <= 0:
 		GameManager.win_game()
 	else:

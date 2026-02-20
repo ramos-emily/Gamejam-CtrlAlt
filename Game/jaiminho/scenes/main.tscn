@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://dc4ehe5o5mw17" path="res://scripts/hearts.gd" id="8_tipki"]
 [ext_resource type="Texture2D" uid="uid://b06ejnxd2fvxv" path="res://assets/Items/heart_full.png" id="9_85g3d"]
 [ext_resource type="Texture2D" uid="uid://bjrb7rmkga6mb" path="res://assets/Items/heart_empty.png" id="10_choun"]
+[ext_resource type="PackedScene" uid="uid://n5cwy3xxgn6x" path="res://scenes/MenuNarrativo.tscn" id="11_ya4ey"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jyhfs"]
 size = Vector2(318, 38)
@@ -63,3 +64,5 @@ offset_bottom = 25.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 12
 text = "01:00"
+
+[node name="MenuNarrativo" parent="." unique_id=1991648020 instance=ExtResource("11_ya4ey")]

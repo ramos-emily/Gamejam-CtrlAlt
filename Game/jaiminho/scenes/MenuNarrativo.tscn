@@ -1,0 +1,228 @@
+[gd_scene format=3 uid="uid://n5cwy3xxgn6x"]
+
+[ext_resource type="Script" uid="uid://b5q06nls11tuf" path="res://scripts/menu_narrativo.gd" id="1_dblgu"]
+[ext_resource type="Texture2D" uid="uid://ccy4bmleo3gd6" path="res://assets/Background/background.png" id="1_mqb3i"]
+[ext_resource type="Texture2D" uid="uid://cvawh5wfr0df3" path="res://assets/Items/envelope.png" id="2_ox7h7"]
+[ext_resource type="Texture2D" uid="uid://bges83bkji1s8" path="res://assets/Items/selo.png" id="3_h7w0r"]
+[ext_resource type="Texture2D" uid="uid://d2a2tiuyp6jrg" path="res://assets/Items/envelopeC.png" id="4_dblgu"]
+
+[node name="MenuNarrativo" type="Control" unique_id=1991648020]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_dblgu")
+
+[node name="bg" type="TextureRect" parent="." unique_id=2113784717]
+layout_mode = 0
+offset_right = 321.0
+offset_bottom = 179.0
+texture = ExtResource("1_mqb3i")
+
+[node name="CardHistory" type="TextureRect" parent="." unique_id=754189685]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 3.0
+offset_right = 269.0
+offset_bottom = 177.0
+texture = ExtResource("2_ox7h7")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CardHistory" unique_id=1074786741]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 17.0
+offset_right = 187.0
+offset_bottom = 234.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+text = "Oi!
+
+Meu nome é Jaiminho. Estou com muita fome. As coisas caem do céu o tempo todo. Tudo cai. Sempre cai. Algumas dessas coisas são comida. Essas eu preciso comer. Outras não são. Essas… por favor, deixe cair no chão. Eu não posso comer tudo. Se uma comida cair no chão, eu fico mais fraquinho… Eu só aguento isso 3 vezes. Mas se eu comer algo que não é comida… eu não sobrevivo. Se eu conseguir aguentar só 2 minutinhos eu ganho! Mas se eu perder minhas 3 vidas antes disso… eu não consigo continuar. Dizem que é assim mesmo: 
+
+"
+fit_content = true
+scroll_active = false
+
+[node name="BtnNext" type="TextureButton" parent="CardHistory" unique_id=1629504055]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 103.0
+offset_right = 206.0
+offset_bottom = 131.0
+texture_normal = ExtResource("3_h7w0r")
+
+[node name="Label" type="Label" parent="CardHistory/BtnNext" unique_id=1229050421]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.48200002
+anchor_right = 0.5
+anchor_bottom = 0.48200002
+offset_left = -14.0
+offset_top = -8.496
+offset_right = 14.0
+offset_bottom = 7.5039997
+theme_override_font_sizes/font_size = 11
+text = "Next"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="CardHistory" unique_id=872939103]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 82.0
+offset_right = 172.0
+offset_bottom = 124.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+text = "Tudo deve cair.
+Mas nem tudo pode.
+Obrigado por cuidar de mim.
+
+com fome,  
+Jaiminho"
+fit_content = true
+scroll_active = false
+
+[node name="CardController" type="TextureRect" parent="." unique_id=407915517]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 3.0
+offset_right = 269.0
+offset_bottom = 177.0
+texture = ExtResource("4_dblgu")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CardController" unique_id=1599954329]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 21.0
+offset_right = 177.0
+offset_bottom = 77.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+text = "Os controles do jogo são esses, setas laterais ou teclas 'A' e 'D'...
+
+Uma dica, se você chegar ao limite da tela, você aparece do outro lado!
+																
+																							Bom jogo e divirta-se!"
+fit_content = true
+scroll_active = false
+
+[node name="BtnPrev" type="TextureButton" parent="CardController" unique_id=235625400]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 103.0
+offset_right = 55.0
+offset_bottom = 130.0
+texture_normal = ExtResource("3_h7w0r")
+
+[node name="Label" type="Label" parent="CardController/BtnPrev" unique_id=448419397]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.48200002
+anchor_right = 0.5
+anchor_bottom = 0.48200002
+offset_left = -14.0
+offset_top = -8.496
+offset_right = 14.0
+offset_bottom = 7.5039997
+theme_override_font_sizes/font_size = 11
+text = "Prev"
+
+[node name="BtnPlay" type="TextureButton" parent="CardController" unique_id=1922452310]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 140.0
+offset_right = 131.0
+offset_bottom = 167.0
+texture_normal = ExtResource("3_h7w0r")
+
+[node name="Label" type="Label" parent="CardController/BtnPlay" unique_id=209954787]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.48200002
+anchor_right = 0.5
+anchor_bottom = 0.48200002
+offset_left = -12.0
+offset_top = -7.4960003
+offset_right = 16.0
+offset_bottom = 8.504001
+theme_override_font_sizes/font_size = 11
+text = "Play"
+
+[node name="CardEnd" type="TextureRect" parent="." unique_id=94769290]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 3.0
+offset_right = 269.0
+offset_bottom = 177.0
+texture = ExtResource("2_ox7h7")
+
+[node name="BtnReplay" type="TextureButton" parent="CardEnd" unique_id=1228381349]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 103.0
+offset_right = 231.0
+offset_bottom = 136.0
+texture_normal = ExtResource("3_h7w0r")
+
+[node name="Label" type="Label" parent="CardEnd/BtnReplay" unique_id=44944289]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.48200002
+anchor_right = 0.5
+anchor_bottom = 0.48200002
+offset_left = -31.5
+offset_top = -10.906004
+offset_right = 4.5
+offset_bottom = 5.093995
+theme_override_font_sizes/font_size = 11
+text = "Replay"
+
+[node name="BtnMenu" type="TextureButton" parent="CardEnd" unique_id=1708739046]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 103.0
+offset_right = 55.0
+offset_bottom = 130.0
+texture_normal = ExtResource("3_h7w0r")
+
+[node name="Label" type="Label" parent="CardEnd/BtnMenu" unique_id=566678551]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.48200002
+anchor_right = 0.5
+anchor_bottom = 0.48200002
+offset_left = -15.5
+offset_top = -8.013998
+offset_right = 15.5
+offset_bottom = 7.986003
+theme_override_font_sizes/font_size = 11
+text = "Menu"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CardEnd" unique_id=1135027668]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 27.0
+offset_right = 162.0
+offset_bottom = 83.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 6
+bbcode_enabled = true
+text = "Obrigado por jogar!!
+e lembre-se:
+
+Tudo me é permitido.
+Mas nem tudo, me convém.
+6:12"
+fit_content = true
+scroll_active = false
+
+[connection signal="pressed" from="CardHistory/BtnNext" to="." method="_on_btn_next_pressed"]
+[connection signal="pressed" from="CardController/BtnPrev" to="." method="_on_btn_prev_pressed"]
+[connection signal="pressed" from="CardController/BtnPlay" to="." method="_on_btn_play_pressed"]
+[connection signal="pressed" from="CardEnd/BtnReplay" to="." method="_on_btn_replay_pressed"]
+[connection signal="pressed" from="CardEnd/BtnMenu" to="." method="_on_btn_menu_pressed"]

@@ -16,7 +16,6 @@ func _physics_process(delta):
 	
 	wrap_screen()
 	
-	# Pixel perfect
 	global_position.x = floor(global_position.x)
 
 func wrap_screen():

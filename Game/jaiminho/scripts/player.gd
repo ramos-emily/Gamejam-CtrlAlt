@@ -1,29 +1,26 @@
 extends CharacterBody2D
 
 @export var speed := 200.0
+const GAME_WIDTH := 320
 
-func _physics_process(_delta):
+func _physics_process(delta):
 	var dir := 0.0
 	
-	# Teclado
 	if Input.is_action_pressed("ui_left"):
 		dir -= 1
 	if Input.is_action_pressed("ui_right"):
 		dir += 1
 	
-	velocity.x = dir * speed
-	move_and_slide()
+	# Movimento manual
+	global_position.x += dir * speed * delta
 	
-	## Mouse (prioridade)
-	#if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) == false:
-		#var mouse_x = get_global_mouse_position().x
-		#global_position.x = lerp(global_position.x, mouse_x, 0.2)
-	#else:
-		#velocity.x = dir * speed
-		#move_and_slide()
+	wrap_screen()
+	
+	# Pixel perfect
+	global_position.x = floor(global_position.x)
 
-func _on_area_entered(area):
-	if area.is_food:
-		area.queue_free()
-	else:
-		get_tree().quit()
+func wrap_screen():
+	if global_position.x < 0:
+		global_position.x += GAME_WIDTH
+	elif global_position.x >= GAME_WIDTH:
+		global_position.x -= GAME_WIDTH
